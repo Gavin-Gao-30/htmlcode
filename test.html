@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<h2> What is your favorite fruit? </h2>
+      I like:<br>
+      <input type="text" name="fruit" placeholder="Type a fruit name" required />
+      <br>
+      <br>
+      <h2> What is your favourite color? </h2>
+	    I like:<br>
+		<label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+		
+      <br>
+      <h2>What are your favorite animal(s)?</h2>
+      I like:<br>
+      <input type="checkbox" name="animal" value="Dog"> Dog<br>
+	  <input type="checkbox" name="animal" value="Cat"> Cat<br>
+      <input type="checkbox" name="animal" value="Rabbit"> Rabbit<br>
+      <br>
+      <br>
+	  
+	  <h2> What is your favourite meat? </h2>
+			<select name="meat">
+			  <option value="Bacon" selected="selected">Bacon</option>
+			  <option value="Beef">Beef</option>
+			  <option value="Chicken">Chicken</option>
+			  <option value="Fish">Fish</option>
+      </select>
+            <br>
+            <br>
+	  
+	  <h2>What is your favorite season?</h2>
+      I like:<br>
+      <select name="season">
+			  <option value="Spring" selected="selected">Spring</option>
+			  <option value="Summer">Summer</option>
+			  <option value="Fall">Fall</option>
+			  <option value="Winter">Winter</option>
+      </select>
+      <br>
+      <br>
+	  
+	  <h2> What is your favorite country? </h2>
+			<input type="radio" id="rad canada" name="canada" value="Canada">
+			<label for="canada">Canada</label><br>
+			<input type="radio" id="rad brazil" name="brazil" value="Brazil">
+			<label for="brazil">Brazil</label><br>
+			<input type="radio" id="rad uk" name="uk" value="U.K.">
+			<label for="uk">U.K.</label><br>
+			<input type="radio" id="rad france" name="france" value="France">
+			<label for="france">France</label><br>
+			<input type="radio" id="rad korea" name="korea" value="Korea">
+			<label for="korea">Korea</label><br>
+            <br>
+	  
+	  <h2>Do you like traveling?</h2>
+	  <input type="radio" id="rad yes-travel" name="yes-travel" value="Yes-travel">
+	  <label for="yes-travel">Yes</label><br>
+	  <input type="radio" id="rad no-travel" name="no-travel" value="No-travel">
+	  <label for="no-travel">No</label><br>
+      <br>
+	  
+	  <h2>Do you like trying various culinary dishe?</h2>
+	  <input type="radio" id="rad yes-dishes" name="yes-dishes" value="Yes-dishes">
+	  <label for="yes-dishes">Yes</label><br>
+	  <input type="radio" id="rad no-dishes" name="no-dishes" value="No-dishes">
+	  <label for="no-dishes">No</label><br>
+      <br>
+	  
+	  <h2>How old are you?</h2>
+	  <input type = "number" id = "number-age" name = "number-age" placeholder="Type a integer" value = "number-age" >
+	  <br>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
